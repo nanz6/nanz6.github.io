@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nan Zhang | Physics Ph.D. Candidate</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: #fafafa;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 18px 0;
+        }
+
+.research-gif {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 35px;
+}
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .site-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 22px;
+            color: #555;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        a {
+            color: #1769aa;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding-top: 60px;
+            padding-bottom: 80px;
+        }
+
+        .intro {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 55px;
+        }
+
+        .intro-text {
+            flex: 1;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #e8e8e8;
+            flex-shrink: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0 0 8px;
+            color: #222;
+        }
+
+        .subtitle {
+            font-size: 17px;
+            color: #666;
+            margin-bottom: 22px;
+        }
+
+        h2 {
+            font-size: 23px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd;
+            color: #222;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        section {
+            margin-bottom: 45px;
+        }
+
+        .project {
+            margin-bottom: 28px;
+        }
+
+        .project p {
+            margin-bottom: 8px;
+        }
+
+        .links {
+            margin-top: 22px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin-right: 18px;
+            margin-bottom: 8px;
+            text-decoration: none;
+        }
+
+        .skills {
+            color: #555;
+        }
+
+        footer {
+            border-top: 1px solid #e5e5e5;
+            padding: 25px 0;
+            color: #888;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        @media (max-width: 650px) {
+            .intro {
+                flex-direction: column-reverse;
+                gap: 25px;
+            }
+
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .nav-links a {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            main {
+                padding-top: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <a class="site-name" href="#">Nan Zhang</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="intro" id="about">
+        <div class="intro-text">
+            <h1>Nan Zhang</h1>
+
+            <div class="subtitle">
+                Physics Ph.D. Candidate<br>
+                University of Illinois Urbana-Champaign
+            </div>
+
+            <p>
+                Hi, I'm Nan Zhang, a Ph.D. candidate in Physics at the
+                University of Illinois Urbana-Champaign. My research focuses
+                on strong gravitational lensing, dark matter substructure,
+                and computational methods for analyzing astronomical data.
+            </p>
+
+            <p>
+                I develop numerical and statistical methods for gravitational
+                lens modeling, focusing on efficient computation,
+                Bayesian inference, and reliable uncertainty estimation.
+                I enjoy working on problems that combine mathematical
+                reasoning, physical modeling, and practical implementation.
+            </p>
+
+            <div class="links">
+                <a href="https://github.com/nanz6" target="_blank">GitHub</a>
+                <a href="mailto:nan.zhang.95330@gmail.com">Email</a>
+                <!-- Replace with your CV file when available -->
+                <!-- <a href="cv.pdf" target="_blank">CV</a> -->
+            </div>
+        </div>
+
+        <!-- Add a photo named profile.jpg to your repository -->
+        <!--<img src="profile.jpg" alt="Nan Zhang" class="profile-photo">-->
+    </section>
+
+    <section id="research">
+        <h2>Research</h2>
+
+        <p>
+            My research focuses on strong gravitational lensing. I use forward modeling to reproduce observed astronomical images and investigate the underlying physics.
+        </p>
+
+    <img
+        src="stronglensing/fitting_animation_cropped.gif"
+        alt="Animation of the forward modeling process"
+        class="research-gif"
+    >
+
+        <p>
+            Markov chain Monte Carlo (MCMC) methods are used to sample parameter distributions and estimate model parameters and their uncertainties.
+        </p>
+
+	<img
+    src="stronglensing/scatter_slow_cropped.gif"
+    alt="Animation of Markov chain Monte Carlo sampling"
+    class="research-gif"
+>
+    </section>
+
+    <section id="projects">
+        <h2>Selected Projects</h2>
+
+        <div class="project">
+            <h3>Strong Gravitational Lensing and Dark Matter Substructure</h3>
+
+            <p>
+                Research on gravitational lens modeling of strongly lensed
+                galaxies, with a focus on dark matter substructure detection,
+                source modeling degeneracies, and statistical inference.
+            </p>
+
+            <a href="https://github.com/nanz6/projects_of_strong_lensing/tree/main/SDP81_lens_modeling"
+               target="_blank">
+                Project Repository
+            </a>
+        </div>
+
+        <div class="project">
+            <h3>Interferometric Image-Plane Modeling</h3>
+
+            <p>
+                Developed computational methods for modeling interferometric
+                observations in the image plane, including correlated-noise
+                modeling and efficient statistical inference. The methods
+                have been implemented in the open-source lens modeling
+                software lenstronomy.
+            </p>
+
+            <a href="https://github.com/lenstronomy/lenstronomy"
+               target="_blank">
+                lenstronomy
+            </a>
+        </div>
+
+        <div class="project">
+            <h3>Scientific Computing and Numerical Methods</h3>
+
+            <p>
+                Development and optimization of numerical algorithms for
+                high-dimensional model fitting, linear inverse problems,
+                and scientific software applications.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Interests</h2>
+
+        <p class="skills">
+            Python, NumPy, SciPy, PyTorch, C++, numerical optimization,
+            Bayesian inference, statistical modeling, scientific computing,
+            machine learning, and computational physics.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            Email:
+            <a href="mailto:nan.zhang.95330@gmail.com">
+                nan.zhang.95330@gmail.com
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/nanz6" target="_blank">
+                github.com/nanz6
+            </a>
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        © 2026 Nan Zhang
+    </div>
+</footer>
+
+</body>
+</html>
